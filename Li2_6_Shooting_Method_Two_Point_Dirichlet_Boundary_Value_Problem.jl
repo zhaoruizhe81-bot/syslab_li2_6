@@ -2,13 +2,15 @@
 using TyBase #基础库
 using TyMath #数学库
 using TyPlot #图形库
-using TyStatistics #统计库
-using TyCurveFitting #曲线拟合库
-using TySymbolicMath #符号计算库
-using TyOptimization #优化库
-using TyGlobalOptimization #全局优化库
-using TyMachineLearning #机器学习库
 ####################################
+
+# Optional Ty packages may be unavailable on some machines due to license limits.
+for pkg in (:TyStatistics, :TyCurveFitting, :TySymbolicMath, :TyOptimization, :TyGlobalOptimization, :TyMachineLearning)
+    try
+        @eval using $pkg
+    catch
+    end
+end
 
 # Use a fixed-step RK4 integrator so the script does not rely on extra ODE packages.
 function rk4_system(fun, tspan, x0, n::Int=200)
