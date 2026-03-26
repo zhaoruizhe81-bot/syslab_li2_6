@@ -24,14 +24,14 @@ git commit -m "Add Li2_6 shooting method files"
 如果已经创建好 GitHub 仓库：
 
 ```bash
-git remote add origin git@github.com:zhaoruizhe/syslab_li2_6.git
+git remote add origin git@github.com:zhaoruizhe81-bot/syslab_li2_6.git
 git push -u origin main
 ```
 
 如果需要使用 HTTPS：
 
 ```bash
-git remote add origin https://github.com/zhaoruizhe/syslab_li2_6.git
+git remote add origin https://github.com/zhaoruizhe81-bot/syslab_li2_6.git
 git push -u origin main
 ```
 
@@ -41,7 +41,7 @@ git push -u origin main
 
 ```powershell
 cd D:\project
-git clone git@github.com:zhaoruizhe/syslab_li2_6.git
+git clone https://github.com/zhaoruizhe81-bot/syslab_li2_6.git
 ```
 
 后续同步：
